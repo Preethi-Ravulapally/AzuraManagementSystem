@@ -1,0 +1,12 @@
+role
+email
+password
+name
+rollno
+branch
+college
+phoneno
+eventname
+eventabstract
+designation
+

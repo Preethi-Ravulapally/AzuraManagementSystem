@@ -1,0 +1,56 @@
+<?php
+session_start();
+echo  "welcome ".$_SESSION['email'];
+?>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Student Login</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="subpage">
+	<!-- Header -->
+			<header id="header">
+				<h1><a href="#"><span></span></a></h1>
+				<a href="#menu">MENU</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.php">LOG OUT</a></li>
+				</ul>
+			</nav>
+	   <section class="wrapper style2">
+					<div class="inner">
+						<header>
+						<h3>WELCOME STUDENT</h3>
+							</header>
+							<div class="flex flex-tabs">
+								<ul class="tab-list">
+								<li><a href="stu_access.html" data-tab="tab-1" class="active">DASHBOARD</a></li>
+									<li><a href="stu_viewevents.php" data-tab="tab-2">VIEW EVENTS</a></li>
+									<li><a href="stu_participate_events.php" data-tab="tab-3">REGISTERED EVENTS</a></li>
+									<li><a href="stu_feedback.php" data-tab="tab-7">FILL FEEDBACK FORM</a></li>
+									</ul>
+								<div class="tabs">
+									<!-- Tab 1 -->
+										<div class="tab tab-1 flex flex-3 active">
+											<div class="box alt">
+									<div class="row 50% uniform">
+										<div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+										<div><h3>WELCOME TO AZURA FEST</H3></DIV>
+										<div class="4u"><span><a href='stu_editprofile.php'><h4>Edit Profile</h4></a></span></div>
+								</div>
+				</section>
+					<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+	</body>
+</html>
+

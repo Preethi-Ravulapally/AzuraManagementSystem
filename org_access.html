@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Admin Login</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="subpage">
+	<!-- Header -->
+			<header id="header">
+				<h1><a href="#"><span></span></a></h1>
+				<a href="#menu">MENU</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.php">LOG OUT</a></li>
+				</ul>
+			</nav>
+	   <section class="wrapper style2">
+					<div class="inner">
+						<header>
+						<h3>
+						<?php
+						session_start();
+						echo  "welcome ".$_SESSION['email'];
+						?>
+						</h3>
+							</header>
+							<div class="flex flex-tabs">
+								<ul class="tab-list">
+								<li><a href="org_access.html" data-tab="tab-1">DASHBOARD</a></li>
+									<li><a href="org_upload_abstract.php" data-tab="tab-2">UPLOAD ABSTRACT</a></li>
+									<li><a href="org_upload_poster.php" data-tab="tab-3">UPLOAD POSTER</a></li>
+									<li><a href="org_upload_video.php" data-tab="tab-7">UPLOAD VIDEO</a></li>
+									<li><a href="org_suborganizer.php" data-tab="tab-1" >ADD SUBORGANIZER</a></li>
+									<li><a href="org_evaluation.php" data-tab="tab-1" >EVALUATION PATTERN</a></li>
+									<li><a href="org_scheduling.php" data-tab="tab-1" >EVENT SCHEDULING</a></li>
+									<li><a href="org_viewparticipants.php" data-tab="tab-1" >VIEW PARTICIPANTS</a></li>
+									</ul>
+								<div class="tabs">
+									<!-- Tab 1 -->
+										<div class="tab tab-1 flex flex-3 active">
+											<div class="box alt">
+									<div class="row 50% uniform">
+										<div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+										<div><h3>WELCOME TO AZURA FEST</H3></DIV>
+										<div class="4u"><span><a href='org_editprofile.php'><h4>Edit Profile</h4></a></span></div>
+								</div>
+				</section>
+				<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+	</body>
+</html>
+
